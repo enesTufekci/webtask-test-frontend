@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: auto;
+  color: white;
+}
+
+div.flex-cont {
+  display: flex;
+  justify-content: center;
+
+}
+
+ul.deviceList {
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+ul.deviceList li {
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 100;
+  width:auto;
+  margin-bottom:10px;
+}
+
+ul.deviceList li::after {
+  content:"";
+  display: block;
+  float: right;
+  margin-left: 40px;
+  width: 80px;
+  height: 40px;
+  transition: all 400ms linear;
+}
+
+ul.deviceList li.on::after{
+  background-color: #66BB6A;
+}
+
+ul.deviceList li.off::after{
+  background-color: #BF360C;
+}
